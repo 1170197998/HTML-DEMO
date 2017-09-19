@@ -1,0 +1,222 @@
+/*清空默认边距*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ccc;
+}
+
+/*整个界面通用属性设置*/
+body {
+    font-size: 12px;
+    font-family: "宋体";
+    color: #333;
+}
+
+/*头部开始*/
+.header {
+    width: 960px;
+    height: 80px;
+    /*居中*/
+    margin: 0 auto;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+.header .logo {
+    width: 644px;
+    height: 27px;
+    background: url("../images/glb_v2.png") no-repeat 0 0;
+    float: left;
+}
+
+.header .logo a {
+    display: inline-block;
+    width: 130px;
+}
+
+.header .links {
+    width: 200px;
+    height: 27px;
+    float: right;
+    text-align: right;
+}
+
+.header .links a {
+    line-height: 27px;
+}
+/*头部结束*/
+
+/*内容开始*/
+.content {
+    width: 960px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.content .top {
+    width: 960px;
+    height: 38px;
+    /*repeat-x: 背景图像将在水平方向重复。*/
+    background: url("../images/line-center.png") repeat-x;
+}
+
+/*.content .left {*/
+/*width: 960px;*/
+/*height: 38px;*/
+/*background: url("../images/line-left1.png") no-repeat left 0;*/
+/*}*/
+
+/*.content .right {*/
+/*width: 960px;*/
+/*height: 38px;*/
+/*background: url("../images/line-right1.png") no-repeat right 0;*/
+/*}*/
+
+.content .right h1 {
+    color: white;
+    font-size: 12px;
+    line-height: 38px;
+    /*开头空两格*/
+    text-indent: 2em;
+}
+
+.content .bottom {
+    width: 960px;
+    height: 562px;
+}
+
+.content .bottom .article {
+    width: 642px;
+    height: 562px;
+    float: left;
+    padding-top: 50px;
+    padding-left: 80px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    /*按顺序设置如下属性： border-width border-style border-color*/
+    border: 1px solid #ccc;
+    /*顶部不显示边框*/
+    border-top: none;
+}
+
+.content .bottom .article .articleTop {
+    width: 560px;
+    height: 60px;
+}
+
+.content .bottom .article .articleTop ul {
+    list-style: none;
+    width: 412px;
+    height: 34px;
+    /*no-repeat 0 0 :在水平和垂直方向上都不需要重复, 且左边和上边都从0开始, 也可以这么写:no-repeat left 0 / no-repeat left top / no-repeat 0 top */
+    background: url("../images/tab.jpg") no-repeat 0 0;
+}
+
+.content .bottom .article .articleTop ul li {
+    /* li 横向布局*/
+    float: left;
+    width: 137px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.content .bottom .article .articleBottom {
+    width: 560px;
+    height: 373px;
+}
+
+.content .bottom .article .articleBottom .line {
+    width: 413px;
+    height: 28px;
+}
+
+.content .bottom .article .articleBottom .line .star {
+    width: 0;
+    color: red;
+}
+
+.content .bottom .article .articleBottom .line span {
+    width: 60px;
+    height: 28px;
+    float: left;
+    line-height: 28px;
+    text-align: right;
+}
+
+.content .bottom .article .articleBottom .line div {
+    width: 333px;
+    height: 28px;
+    float: right;
+}
+
+.content .bottom .article .articleBottom .line input {
+    width: 214px;
+    height: 24px;
+}
+
+.content .bottom .article .articleBottom .line select {
+    width: 100px;
+    height: 28px;
+}
+
+.content .bottom .article .articleBottom p {
+    margin-left: 80px;
+    line-height: 28px;
+}
+
+.content .bottom .article .articleBottom .line .special {
+    width: 324px;
+}
+
+.content .bottom .article .articleBottom .line .vcodeInput {
+    float: left;
+    margin-right: 10px;
+}
+
+.content .bottom .article .articleBottom .line img {
+    width: 100px;
+    height: 28px;
+    float: right;
+}
+
+.content .bottom .article .articleBottom input[type=submit] {
+    width: 119px;
+    height: 37px;
+    background: url("../images/glb_v2.png") no-repeat -144px -360px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.content .bottom .aside {
+    width: 318px;
+    height: 562px;
+    float: right;
+    padding-top: 105px;
+    padding-left: 45px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/*内容结束*/
+
+/*底部开始*/
+.footer {
+    width: 960px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+.footer p {
+    color: #ccc;
+    text-align: center;
+    line-height: 48px;
+}
+/*底部结束*/
