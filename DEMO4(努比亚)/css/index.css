@@ -2,6 +2,10 @@
     height: 60px;
     width: 100%;
     background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
 }
 
 .top .top_in {
@@ -102,6 +106,8 @@ color: #e82c07;
     background: white;
     position: absolute;
     z-index: 998;
+    /*流出顶部区域的高度*/
+    margin-top: 60px;
 }
 
 .banner .nav {
@@ -262,7 +268,7 @@ margin: 0 -100%;
 .banner .video > ul > li:hover .video_info > img {
     /* ease-in-out:先加速后减速,*/
     /*infinite:无限循环播放*/
-    animation: sport 2s 1.5s ease-in-out infinite;
+    animation: sport 2s 0.5s ease-in-out infinite;
 }
 
 @keyframes sport {
@@ -281,4 +287,290 @@ margin: 0 -100%;
     100% {
         transform: scale(1);
     }
+}
+
+/*内容区域*/
+.content {
+    height: 1883px;
+    width: 100%;
+}
+
+.content > dl {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content > dl > dt {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.content > dl > dt > h3 {
+    font-size: 35px;
+    color: #333;
+}
+
+.content > dl > dt > p {
+    margin-top: 20px;
+    color: #e8340e;
+}
+
+.content .content_phone {
+    width: 1200px;
+    height: 1200px;
+}
+
+.content .content_phone > li {
+    float: left;
+    background: white;
+    position: relative;
+    /*隐藏的目的是防止图片放大超出边间*/
+    overflow: hidden;
+}
+
+/*li:nth-child(1): 选择器匹配属于其父元素的第一个子元素的li标签的背景色*/
+.content .content_phone > li:nth-child(1) {
+    width: 1200px;
+    height: 395px;
+    margin-bottom: 10px;
+}
+
+.content .content_phone > li:nth-child(2) {
+    width: 395px;
+    height: 795px;
+    margin-right: 10px;
+}
+
+.content .content_phone > li:nth-child(3) {
+    width: 795px;
+    height: 390px;
+    margin-bottom: 10px;
+}
+
+.content .content_phone > li:nth-child(4) {
+    width: 390px;
+    height: 395px;
+    margin-right: 10px;
+}
+
+.content .content_phone > li:nth-child(5) {
+    width: 395px;
+    height: 395px;
+}
+
+.content .content_phone > li > img {
+    width: 100%;
+    transition: all 1s;
+}
+
+.content .content_phone > li:nth-child(1) > img {
+    margin-top: 60px;
+}
+
+.content .content_phone .phone_des {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10px;
+    text-align: center;
+}
+
+.content .content_phone .phone_des > h4 {
+    font-size: 20px;
+    color: #000;
+}
+
+.content .content_phone .phone_des > p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.content .content_phone .phone_des > span {
+    display: inline-block;
+    width: 108px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #000;
+}
+
+.content .content_phone > li:nth-child(1) .phone_des {
+    left: 0%;
+    margin-left: 800px;
+    bottom: 150px;
+}
+
+.content .content_phone > li:nth-child(1) img {
+    margin-left: -100px;
+}
+
+.content .content_phone > li:nth-child(3) img {
+    margin-left: 100px;
+}
+
+.content .content_phone > li:nth-child(1):hover img {
+    margin-left: 0;
+}
+
+.content .content_phone > li:nth-child(3):hover img {
+    margin-left: 0;
+}
+
+.content .content_phone > li:hover .img_scale {
+    transform: scale(1.2, 1.2);
+}
+
+.content .content_accessories {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    /* 设置弹性盒子在主轴(横轴)方向上的对齐方式,有以下值
+    flex-start:默认值,位于容器开头
+    flex-end:位于容器结尾
+    center:位于容器中心
+    space-between:位于各行之间留有空白的容器内
+    space-around:位于各行之前\之间\之后都留有空白的容器内
+    initial:设置该属性为他的默认值
+    inherit:从父元素集成该属性
+    */
+    justify-content: space-between;
+}
+
+.content .content_accessories > li {
+    float: left;
+    width: 295px;
+    height: 300px;
+    background: white;
+    overflow: hidden;
+}
+
+.content .content_accessories > li > img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.content .content_accessories > li > p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.content .content_accessories > li:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+/*底部区域*/
+.footer {
+    height: 396px;
+    width: 100%;
+}
+
+.footer .footer_in {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer .footer_top {
+    margin-top: 40px;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #ccc;
+}
+
+.footer .footer_center {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.footer .footer_center > dl {
+    float: left;
+    width: 200px;
+}
+
+.footer .footer_center > dl > dt {
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.footer .footer_center > dl > dd {
+    line-height: 20px;
+}
+
+.footer .footer_center > dl > dd:hover a {
+    color: red;
+}
+
+.footer .footer_copyright {
+    float: left;
+    list-style: none;
+}
+
+.footer .footer_copyright > li {
+    float: left;
+}
+
+.footer .footer_copyright > li > a {
+    padding: 10px;
+    font-size: 10px;
+}
+
+.footer .footer_copyright > li:first-child a {
+    padding-left: 0;
+}
+
+.footer .footer_copyright > li:hover a {
+    color: #000;
+}
+
+.footer .footer_social {
+    float: left;
+    margin-left: 50px;
+    list-style: none;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.footer .footer_social > li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer .footer_social > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/nubia-syb-all.png");
+}
+
+.footer .footer_social > li:nth-child(1) a {
+    background-position: -246px 0;
+}
+
+.footer .footer_social > li:nth-child(2) a {
+    background-position: -186px 0;
+}
+
+.footer .footer_social > li:nth-child(3) a {
+    background-position: -126px 0;
+}
+
+.footer .footer_social > li:nth-child(4) a {
+    background-position: -156px 0;
+}
+
+.footer .footer_info {
+    float: left;
+    font-size: 10px;
+    line-height: 30px;
 }

@@ -22,4 +22,5 @@ body {
 a {
     /*去掉a标签下划线*/
     text-decoration: none;
+    color: #999;
 }
